@@ -63,8 +63,24 @@
         grid-template-columns: 1fr 1fr;
         column-width: 2rem;
     }
+
+    #flexbox > h2 {
+        font-size: 6rem;
+    }
+}
+
+.bg-pink p:nth-child(2) {
+    margin-left: 10px;
 }
 
 #flexbox {
     display: flex;
+    flex-direction: column;
+}
+
+#canvas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
