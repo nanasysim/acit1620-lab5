@@ -67,6 +67,28 @@
     #flexbox > h2 {
         font-size: 6rem;
     }
+
+    #grid {
+        display: grid;
+        grid-template-rows: auto repeat(4, 250px);
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1rem;
+    }
+
+    #grid h2 {
+        grid-column: span 3;
+        text-align: right;
+        font-size: 6rem;
+    }
+
+    #grid p:first-of-type {
+        grid-column: span 2;
+    }
+
+    #grid div {
+        grid-column: 2 / span 2;
+        grid-row: 3 / span 3;
+    }
 }
 
 .bg-pink p:nth-child(2) {
